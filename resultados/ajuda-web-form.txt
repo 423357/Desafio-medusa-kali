@@ -1,0 +1,19 @@
+Medusa v2.3 [http://www.foofus.net] (C) JoMo-Kun / Foofus Networks <jmk@foofus.net>
+
+web-form.mod (2.1) Luciano Bello <luciano@linux.org.ar> :: Brute force module for web forms
+
+Available module options:
+  USER-AGENT:?       User-agent value. Default: "I'm not Mozilla, I'm Ming Mong".
+  FORM:?             Target form to request. Default: "/"
+  DENY-SIGNAL:?      Authentication failure message. Attempt flagged as successful if text is not present in
+                     server response. Default: "Login incorrect"
+  CUSTOM-HEADER:?    Custom HTTP header.
+                     More headers can be defined by using this option several times.
+  FORM-DATA:<METHOD>?<FIELDS>
+                     Methods and fields to send to web service. Valid methods are GET and POST. The actual form
+                     data to be submitted should also be defined here. Specifically, the fields: username and
+                     password. The username field must be the first, followed by the password field.
+                     Default: "post?username=&password="
+
+Usage example: "-M web-form -m USER-AGENT:"g3rg3 gerg" -m FORM:"webmail/index.php" -m DENY-SIGNAL:"deny!"
+                 -m FORM-DATA:"post?user=&pass=&submit=True" -m CUSTOM-HEADER:"Cookie: name=value"

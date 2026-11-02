@@ -1,0 +1,18 @@
+Password for [WORKGROUP\msfadmin]:
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	print$          Disk      Printer Drivers
+	tmp             Disk      oh noes!
+	opt             Disk      
+	IPC$            IPC       IPC Service (metasploitable server (Samba 3.0.20-Debian))
+	ADMIN$          IPC       IPC Service (metasploitable server (Samba 3.0.20-Debian))
+	msfadmin        Disk      Home Directories
+Reconnecting with SMB1 for workgroup listing.
+
+	Server               Comment
+	---------            -------
+
+	Workgroup            Master
+	---------            -------
+	WORKGROUP            METASPLOITABLE
